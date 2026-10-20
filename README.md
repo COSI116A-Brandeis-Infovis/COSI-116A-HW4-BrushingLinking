@@ -65,6 +65,8 @@ Make your edits and commit major versions to your git repository.
     | 1997 | 16.7    | 6.8          | 5.3    |
     | ...  | ...     | ...          | ...    |
 
+**This is a hard assignment.**. We are asking you to implement something that is very tricky.  We expect you to first read through the code we supply and make sure that you understand how the scatterplot and line chart are implemented and communicating with one another.  Then, implement the table in a thoughtful way.  If you get stuck implementing the table and the communications between the table and the other visualizations, go back to reading how the line chart and scatterplot communicate.  
+
 1. Add any necessary CSS to `style.css` for displaying your table.
 
 1. Add brushing and highlighting functionality to your table to match both function and style of the scatterplot and line chart.
@@ -154,6 +156,8 @@ dispatcher.on("selectionUpdated.sp-to-lc", callback1);
 dispatcher.on("selectionUpdated.sp-to-tab", callback1);
 ```
 where `"sp-to-lc"` and `"sp-to-tab"` are arbitrary but written here to be informative.
+
+In this assignment, we actually tell each chart what its dispatch string is - look at how the scatterplot or line chart send messages in their `highlight` methods.
 
 ## Grading
 
